@@ -107,6 +107,9 @@
 				var range = [ this.pageNo - half,
 						this.pageNo + half ];
 	
+				if (this.visiblePages % 2 != 0)
+						range[1]-=1;
+			
 				var delta = range[0] > 0 ? 0 : 1 - range[0];
 	
 				range[1] = range[1] + delta;
