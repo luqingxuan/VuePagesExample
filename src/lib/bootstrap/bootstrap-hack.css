@@ -8,10 +8,10 @@
 	border-bottom-width: 1px;
 }
 
-.btn:hover, .btn:active, .btn.active {
+.btn:focus, .btn:hover, .btn:active, .btn.active {
 	outline: none !important;
 }
 
-a:hover, a:active, a.active {
+a:hover, a:active, a.active, a:focus {
 	outline: none !important;
 }
