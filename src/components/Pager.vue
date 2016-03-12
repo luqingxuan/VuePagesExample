@@ -1,8 +1,5 @@
 <template>
 	<div v-show="totalRecords > 0" class="pagination-bar clearfix">
-		<div class="pull-left pagination-summary">
-			第 {{startRecord}}到 {{endRecord}} 条，共 {{totalRecords}} 条记录
-		</div>
 		<ul class="pull-right pagination">
 			<li :class="{first:true,disabled:pageNo==1}">
 				<a href="javascript:void(0);" @click="page(1,$event)">&lt;&lt;</a>
@@ -20,6 +17,9 @@
 				<a href="javascript:void(0);" @click="page(totalPages,$event)">&gt;&gt;</a>
 			</li>
 		</ul>
+		<div class="pull-left pagination-summary">
+			第 {{startRecord}}到 {{endRecord}} 条，共 {{totalRecords}} 条记录
+		</div>
 	</div>
 </template>
 
@@ -43,7 +43,7 @@
 			}, 
 			"visiblePages":{//显示页码数
 				type:Number,
-				default:5
+				default:6
 			},
 			"pageChange":{//分页回调
 				type:Function,
@@ -80,6 +80,9 @@
 				var range = [ this.pageNo - half,
 						this.pageNo + half ];
 	
+				if (this.visiblePages % 2 == 0)
+						range[0]+=1;
+						
 				var delta = range[0] > 0 ? 0 : 1 - range[0];
 	
 				range[0] = range[0] + delta;
@@ -106,10 +109,10 @@
 				// 页码显示范围
 				var range = [ this.pageNo - half,
 						this.pageNo + half ];
-	
-				if (this.visiblePages % 2 != 0)
+				
+				if (this.visiblePages % 2 == 0)
 						range[1]-=1;
-			
+				
 				var delta = range[0] > 0 ? 0 : 1 - range[0];
 	
 				range[1] = range[1] + delta;
