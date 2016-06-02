@@ -2,16 +2,7 @@ import Test from '../component/Test.vue';
 
 require('../../css/pages/index.css');
 
-class App extends Vue{
-	
-	constructor(props) {
-  
-		super(props);
-	
-	}
-}
-
-new App({
+module.exports=new Vue({
 	el : '#vue_target',
 	components : {
 		test : Test
