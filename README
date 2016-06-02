@@ -14,7 +14,7 @@ webpack+gulp project
 
 特点
 1.webpack+gulp方式集成开发
-2.集成jquery/bootstrap/react，同样易于集成其它plugin
+2.集成jquery/bootstrap/vue，同样易于集成其它plugin
 2.js/css/html压缩，js混淆，减小体积
 3.MD5文件版本管理
 4.前后端分离，API调试方便
