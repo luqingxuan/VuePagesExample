@@ -1,6 +1,6 @@
-require('../../css/pages/index.css');
+import Test from '../component/Test.vue';
 
-var Test = require('../component/Test.vue');
+require('../../css/pages/index.css');
 
 module.exports = new Vue({
 	el : '#vue_target',

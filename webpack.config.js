@@ -112,13 +112,9 @@ var loaders = [
 			test : /\.js$/,
 			loader : 'babel',
 			query : {
-				compact : false
+				presets : [ 'es2015', 'stage-2' ]
 			},
 			exclude : /node_modules/
-		},
-		{
-			test : /\.jsx?$/,
-			loaders : [ 'jsx?harmony' ]
 		},
 		{
 			test : /\.json$/,
