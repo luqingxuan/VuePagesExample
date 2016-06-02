@@ -205,7 +205,7 @@ module.exports = {
 		root : [ path.join(__dirname, 'src'),
 				path.join(__dirname, 'node_modules') ],
 		// 自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
-		extensions : [ '', '.js', '.vue', 'jsx', '.json', '.scss' ],
+		extensions : [ '', '.js', '.vue', '.json', '.scss' ],
 		// 模块别名定义，方便后续直接引用别名，无须多写长长的地址
 		alias : {}
 	},
