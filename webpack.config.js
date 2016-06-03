@@ -19,6 +19,7 @@ new webpack.ProvidePlugin({
 	$ : "jquery",
 	jQuery : "jquery",
 	"window.jQuery" : "jquery",
+	'Cookies' : 'js-cookie',
 	moment : "moment",
 	Vue : "vue",
 }),
