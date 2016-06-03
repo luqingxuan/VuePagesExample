@@ -1,6 +1,6 @@
 参考：https://github.com/mingfengwang/webpack-react-redux
 
-如果要兼容到IE8
+如果要兼容到IE8,当然了，Vue不支持IE8，it's just a copy from react
 1.使用jquery2.0.0一下版本
 
 2.开发中不能使用export default {}格式，使用module.exports={}
