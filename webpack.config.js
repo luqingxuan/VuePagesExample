@@ -111,10 +111,7 @@ var loaders = [
 		},
 		{
 			test : /\.js$/,
-			loader : 'babel',
-			query : {
-				presets : [ 'es2015', 'stage-2' ]
-			},
+			loaders : [ 'es3ify', 'babel?presets[]=es2015,presets[]=stage-2' ],
 			exclude : /node_modules/
 		},
 		{
