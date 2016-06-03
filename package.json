@@ -47,6 +47,8 @@
     "postcss-loader": "^0.8.0",
     "precss": "^1.4.0",
     "purecss": "^0.6.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
     "vue": "^1.0.0",
     "vue-async-data": "^1.0.2",
     "vue-hot-reload-api": "^1.2.0",
@@ -56,8 +58,7 @@
     "vue-router": "^0.7.8",
     "vue-style-loader": "^1.0.0",
     "vue-validator": "^2.0.0-alpha.13",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
+    "vuex": "^0.6.3",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1"
   }
