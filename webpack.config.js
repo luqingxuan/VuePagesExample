@@ -21,7 +21,7 @@ new webpack.ProvidePlugin({
 	"window.jQuery" : "jquery",
 	'Cookies' : 'js-cookie',
 	moment : "moment",
-	Vue : "vue",
+	Vue : "vue"
 }),
 // CSS文件放置在CSS目录
 new ExtractTextPlugin("./css/[name].css") ];
@@ -35,12 +35,15 @@ var globalEntrys = function(entrys) {
 
 	entrys['moment'] = [ 'moment' ];
 
-	entrys['vue'] = [ 'vue', 'vue-validator', 'vue-resource' ];
+	entrys['vue'] = [ 'vue' ];
+
+	entrys['vue-extra'] = [ 'vuex', 'vue-router', 'vue-resource',
+			'vue-async-data', 'vue-validator' ];
 
 	entrys['bootstrap'] = [ 'bootstrap-webpack!./bootstrap.config.js' ];
 
 	plugins.push(new CommonsChunkPlugin({// 注意顺序
-		name : [ 'vue', 'bootstrap', 'moment', 'jquery' ],
+		name : [ 'vue-extra', 'vue', 'bootstrap', 'moment', 'jquery' ],
 		minChunks : Infinity
 	}));
 
