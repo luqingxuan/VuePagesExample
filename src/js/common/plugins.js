@@ -26,5 +26,5 @@ require("js-cookie");
 require("jquery.loadmask");
 
 // 弹出提示插件
-require('js/components/jquery/confirm/jquery.confirm.js');
-require('js/components/jquery/confirm/jquery.confirm.css');
+require('components/jquery/confirm/jquery.confirm.js');
+require('components/jquery/confirm/jquery.confirm.css');
