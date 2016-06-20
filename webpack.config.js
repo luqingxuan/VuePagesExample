@@ -38,7 +38,7 @@ var globalEntrys = function(entrys) {
 	entrys['vue'] = [ 'vue' ];
 
 	entrys['vue-extra'] = [ 'vuex', 'vue-router', 'vue-resource',
-			'vue-async-data', 'vue-validator' ];
+			'vue-validator' ];
 
 	entrys['bootstrap'] = [ 'bootstrap-webpack!./bootstrap.config.js' ];
 
