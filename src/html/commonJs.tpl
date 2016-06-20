@@ -2,9 +2,9 @@
 <script type="text/javascript" src="/assets/js/jquery.js"></script>
 <!-- 日期处理依赖 -->
 <script type="text/javascript" src="/assets/js/moment.js"></script>
-<!-- Vue依赖 -->
+<!-- Vue核心依赖 -->
 <script type="text/javascript" src="/assets/js/vue.js"></script>
-<!-- Vue resource/validation/router/vuex等依赖 -->
+<!-- Vue生态resource/validation/router/vuex等依赖 -->
 <script type="text/javascript" src="/assets/js/vue-extra.js"></script>
 <!-- Bootstrap依赖 -->
 <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
