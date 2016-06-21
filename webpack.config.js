@@ -37,13 +37,13 @@ var globalEntrys = function(entrys) {
 
 	entrys['vue'] = [ 'vue' ];
 
-	entrys['vue-extra'] = [ 'vuex', 'vue-router', 'vue-resource',
+	entrys['vue-vendors'] = [ 'vuex', 'vue-router', 'vue-resource',
 			'vue-validator' ];
 
 	entrys['bootstrap'] = [ 'bootstrap-webpack!./bootstrap.config.js' ];
 
 	plugins.push(new CommonsChunkPlugin({// 注意顺序
-		name : [ 'vue-extra', 'vue', 'bootstrap', 'moment', 'jquery' ],
+		name : [ 'vue-vendors', 'vue', 'bootstrap', 'moment', 'jquery' ],
 		minChunks : Infinity
 	}));
 

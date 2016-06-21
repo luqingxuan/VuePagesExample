@@ -5,7 +5,7 @@
 <!-- Vue核心依赖 -->
 <script type="text/javascript" src="/assets/js/vue.js"></script>
 <!-- Vue生态resource/validation/router/vuex等依赖 -->
-<script type="text/javascript" src="/assets/js/vue-extra.js"></script>
+<script type="text/javascript" src="/assets/js/vue-vendors.js"></script>
 <!-- Bootstrap依赖 -->
 <script type="text/javascript" src="/assets/js/bootstrap.js"></script>
 <!-- 其他通用插件依赖 -->
