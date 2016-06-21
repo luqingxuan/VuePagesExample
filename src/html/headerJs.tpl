@@ -1,4 +1,5 @@
 <script type="text/javascript">
+	//iframe ? say no
 	 if (window != top) 
 	 	top.location.href = location.href;
 
