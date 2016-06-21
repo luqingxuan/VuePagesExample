@@ -254,14 +254,18 @@ module.exports = {
 			}
 		}
 	},
-	devtool : 'eval-source-map'
+	devtool : 'source-map'
 }
 
 if (process.env.NODE_ENV === 'production') {
-	module.exports.devtool = 'source-map'
 	// http://vuejs.github.io/vue-loader/workflow/production.html
-	module.exports.plugins = (module.exports.plugins || []).concat([
-			new webpack.optimize.UglifyJsPlugin({
+	module.exports.plugins = plugins.concat(
+			new webpack.optimize.OccurenceOrderPlugin(),
+			new webpack.DefinePlugin({
+				"process.env" : {
+					"NODE_ENV" : JSON.stringify("production")
+				}
+			}), new webpack.optimize.UglifyJsPlugin({
 				mangle : {
 					except : [ '$super', '$', 'exports', 'require' ]
 				// 排除关键字
@@ -269,5 +273,5 @@ if (process.env.NODE_ENV === 'production') {
 				compress : {
 					warnings : false
 				}
-			}), new webpack.optimize.OccurenceOrderPlugin() ])
+			}));
 }
