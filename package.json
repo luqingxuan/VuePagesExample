@@ -71,6 +71,7 @@
     "vue-validator": "^2.0.0-alpha.13",
     "vuex": "^0.6.3",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "xss": "^0.2.13"
   }
 }
