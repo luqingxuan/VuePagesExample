@@ -39,10 +39,8 @@ var globalEntrys = function(entrys) {
 	entrys['vue-platform'] = [ 'vuex', 'vue-router', 'vue-resource',
 			'vue-validator' ];
 
-	entrys['bootstrap'] = [ 'bootstrap-webpack!./bootstrap.config.js' ];
-
 	plugins.push(new CommonsChunkPlugin({// 注意顺序
-		name : [ 'vue-platform', 'vue', 'bootstrap', 'moment', 'jquery' ],
+		name : [ 'vue-platform', 'vue', 'moment', 'jquery' ],
 		minChunks : Infinity
 	}));
 
