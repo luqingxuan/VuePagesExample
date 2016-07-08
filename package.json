@@ -83,6 +83,7 @@
     "vuex": "^0.6.3",
     "webpack": "^1.12.12",
     "webpack-dev-server": "^1.14.1",
+    "webui-popover": "^1.2.12",
     "xss": "^0.2.13"
   }
 }
