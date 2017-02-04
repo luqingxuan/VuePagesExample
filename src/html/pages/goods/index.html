@@ -9,25 +9,10 @@
 <body>
 
 	<!-- write your DOM here -->
-	<div id="app">
-		<div style="margin-bottom: 20px;">
-			test component sample:
-			<test></test>
-		</div>
-
-		<div style="margin-bottom: 20px;">data sample:{{message}}</div>
-
-		<div style="margin-bottom: 20px;">
-			<a v-link="{ path: '/index' }">Go to Index</a> <a
-				v-link="{ path: '/about' }">Go to About</a>
-		</div>
-
-		<!-- use router-view element as route outlet -->
-		<router-view></router-view>
-	</div>
+	<div id="app"></div>
 
 	<img src="/assets/images/bgs/test.jpg"
-		style="width: 100px; height: 100px; margin-top: 50px;" />
+		style="width: 100px; height: 100px; display: block; margin: 30px auto;" />
 
 	<include src="../../footer.tpl"></include>
 	<script type="text/javascript" src="/assets/js/goods/index.js"></script>
