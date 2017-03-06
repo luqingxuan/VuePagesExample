@@ -195,9 +195,6 @@ module.exports = {
         alias: {
             root: path.resolve(''),
             js: path.resolve('src/js'),
-            store: path.resolve('src/js/store'),
-            router: path.resolve('src/js/router'),
-            enhance: path.resolve('src/js/enhance'),
             shim: path.resolve('src/js/shim'),
             css: path.resolve('src/css'),
             images: path.resolve('src/images'),

@@ -1,9 +1,3 @@
-const webpack = require('webpack');
-
-const extend = require('extend');
-
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
 // 域名
 const webServerDomain = 'localhost';
 
@@ -12,6 +6,12 @@ const webServerPort = 7070;
 
 // API服务器
 const developApiServer = ''
+
+const webpack = require('webpack');
+
+const extend = require('extend');
+
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const defaults = require('./webpack.common.config.js');
 const config = extend(true, {}, defaults);
@@ -29,9 +29,9 @@ config.module.loaders.unshift({
 config.vue = {
     loaders: {
         js: 'es3ify!babel?presets[]=es2015,presets[]=stage-2,plugins[]=transform-runtime',
-        css: ExtractTextPlugin.extract('css!postcss'),
-        less: ExtractTextPlugin.extract('css!postcss!less'),
-        scss: ExtractTextPlugin.extract('css!postcss!scss')
+        css: 'vue-style!css!postcss',
+        less: 'vue-style!css!postcss!less',
+        scss: 'vue-style!css!postcss!scss'
     }
 };
 
