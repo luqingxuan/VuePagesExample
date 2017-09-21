@@ -51,7 +51,7 @@ var vueEntries = [];
 
 vueEntries.push({
     id: 'vue',
-    contains: ['expose-loader?Vue!vue']
+    contains: ['vue']
 });
 
 vueEntries.push({

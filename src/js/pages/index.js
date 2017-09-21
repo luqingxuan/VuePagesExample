@@ -1,6 +1,8 @@
 //  Page CSS
 require('css/pages/index.css');
 
+import Vue from 'vue';
+
 import App from 'modules/App.vue';
 import store from 'store/index';
 import router from 'router/index';
