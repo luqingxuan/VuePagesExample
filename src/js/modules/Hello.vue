@@ -1,6 +1,6 @@
 <template>
     <div class="user-area">
-        hello</br>
+        hello world</br>
         <router-link to="/about" path="/about">to about</router-link>
         </br>
         <router-link to="/" path="/">to index</router-link>

@@ -1,1 +1,13 @@
 @CHARSET "UTF-8";
+
+body {
+	background: url("../../images/bgs/test.jpg") 50% 50% no-repeat;
+}
+
+h1 {
+    color: red;
+}
+
+h3 {
+    color: green;
+}

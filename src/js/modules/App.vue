@@ -1,6 +1,5 @@
 <template>
-    <router-view v-if="login" keep-alive></router-view>
-    <div v-else class="user-area">
+    <div class="user-area">
         <router-view keep-alive></router-view>
     </div>
 </template>
@@ -18,9 +17,7 @@
         watch: {
         },
         computed: {
-            login: function(){
-                return /\/login/.test(this.$route.path);
-            }
+
         },
         methods: {
         }

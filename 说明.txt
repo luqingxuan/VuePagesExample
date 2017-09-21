@@ -1,6 +1,6 @@
 参考：https://github.com/mingfengwang/webpack-react-redux
 
-如果要兼容到IE8,当然了，Vue不支持IE8，it's just a copy from react
+如果要兼容到IE8
 1.使用jquery2.0.0以下版本
 
 2.开发中不能使用export default {}格式，使用module.exports={}
@@ -17,5 +17,3 @@ require('fetch-polyfill');
 
 6.ES6 Object.assign
 require('core-js/es6/object');
-
-7.当然Vue需要IE9+浏览器支持，以上可以忽略

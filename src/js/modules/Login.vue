@@ -15,8 +15,6 @@
         },
         methods: {
             login: function() {
-                Auth.login('123', '123', '123', 'zhangsan', {});
-                this.redirectTo('/');
             }
         }
     }
