@@ -8,21 +8,28 @@ const IsProduct = process.env.NODE_ENV === 'production';
 
 const config = require('./webpack.common.config.js');
 
+const cssLoader = {
+    loader: 'css-loader',
+    options: {
+        minimize: true //css压缩
+    }
+};
+
 config.module.rules.push({
     test: /\.vue$/,
     loader: 'vue-loader',
     options: {
         loaders: {
-            css: ExtractTextPlugin.extract({
-                use: ['css-loader', 'postcss-loader'],
+            css: !IsProduct ? 'style-loader!css-loader!postcss-loader' : ExtractTextPlugin.extract({
+                use: [cssLoader, 'postcss-loader'],
                 fallback: 'vue-style-loader' // <- 这是vue-loader的依赖，所以如果使用npm3，则不需要显式安装
             }),
-            less: ExtractTextPlugin.extract({
-                use: ['css-loader', 'postcss-loader', 'less-loader'],
+            less: !IsProduct ? 'style-loader!css-loader!postcss-loader!less-loader' : ExtractTextPlugin.extract({
+                use: [cssLoader, 'postcss-loader', 'less-loader'],
                 fallback: 'vue-style-loader' // <- 这是vue-loader的依赖，所以如果使用npm3，则不需要显式安装
             }),
-            scss: ExtractTextPlugin.extract({
-                use: ['css-loader', 'postcss-loader', 'scss-loader'],
+            scss: !IsProduct ? 'style-loader!css-loader!postcss-loader!sass-loader' : ExtractTextPlugin.extract({
+                use: [cssLoader, 'postcss-loader', 'sass-loader'],
                 fallback: 'vue-style-loader' // <- 这是vue-loader的依赖，所以如果使用npm3，则不需要显式安装
             })
         }
